@@ -2,21 +2,21 @@
     <div id="settingsContainerLeft">
         <div id="settingsNavContainer">
             <div id="settingsNavHeader">
-                <span id="settingsNavHeaderText"><%- lang('settings.navHeaderText') %></span>
+                <span id="settingsNavHeaderText">설정</span>
             </div>
             <div id="settingsNavItemsContainer">
                 <div id="settingsNavItemsContent">
-                    <button class="settingsNavItem" rSc="settingsTabAccount" id="settingsNavAccount" selected><%- lang('settings.navAccount') %></button>
-                    <button class="settingsNavItem" rSc="settingsTabMinecraft"><%- lang('settings.navMinecraft') %></button>
-                    <button class="settingsNavItem" rSc="settingsTabMods"><%- lang('settings.navMods') %></button>
-                    <button class="settingsNavItem" rSc="settingsTabJava"><%- lang('settings.navJava') %></button>
-                    <button class="settingsNavItem" rSc="settingsTabLauncher"><%- lang('settings.navLauncher') %></button>
+                    <button class="settingsNavItem" rSc="settingsTabAccount" id="settingsNavAccount" selected>계정</button>
+                    <button class="settingsNavItem" rSc="settingsTabMinecraft">마인크래프트</button>
+                    <button class="settingsNavItem" rSc="settingsTabMods">모드</button>
+                    <button class="settingsNavItem" rSc="settingsTabJava">자바</button>
+                    <button class="settingsNavItem" rSc="settingsTabLauncher">런처</button>
                     <div class="settingsNavSpacer"></div>
                     <button class="settingsNavItem" rSc="settingsTabAbout"><%- lang('settings.navAbout') %></button>
-                    <button class="settingsNavItem" rSc="settingsTabUpdate" id="settingsNavUpdate"><%- lang('settings.navUpdates') %></button>
+                    <button class="settingsNavItem" rSc="settingsTabUpdate" id="settingsNavUpdate">업데이트</button>
                     <div id="settingsNavContentBottom">
                         <div class="settingsNavDivider"></div>
-                        <button id="settingsNavDone"><%- lang('settings.navDone') %></button>
+                        <button id="settingsNavDone">뒤로</button>
                     </div>
                 </div>
             </div>
@@ -25,8 +25,8 @@
     <div id="settingsContainerRight">
         <div id="settingsTabAccount" class="settingsTab">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText"><%- lang('settings.tabAccountHeaderText') %></span>
-                <span class="settingsTabHeaderDesc"><%- lang('settings.tabAccountHeaderDesc') %></span>
+                <span class="settingsTabHeaderText">계정 설정</span>
+                <span class="settingsTabHeaderDesc">새 계정 또는 기존 계정을 추가합니다.</span>
             </div>
             <div class="settingsAuthAccountTypeContainer">
                 <div class="settingsAuthAccountTypeHeader">
@@ -40,7 +40,7 @@
                         <span><%- lang('settings.microsoftAccount') %></span>
                     </div>
                     <div class="settingsAuthAccountTypeHeaderRight">
-                        <button class="settingsAddAuthAccount" id="settingsAddMicrosoftAccount"><%- lang('settings.addMicrosoftAccount') %></button>
+                        <button class="settingsAddAuthAccount" id="settingsAddMicrosoftAccount">마이크로소프트 계정 추가</button>
                     </div>
                 </div>
                 
@@ -60,7 +60,7 @@
                         <span><%- lang('settings.mojangAccount') %></span>
                     </div>
                     <div class="settingsAuthAccountTypeHeaderRight">
-                        <button class="settingsAddAuthAccount" id="settingsAddMojangAccount"><%- lang('settings.addMojangAccount') %></button>
+                        <button class="settingsAddAuthAccount" id="settingsAddMojangAccount">마인크래프트(Mojang)계정 생성</button>
                     </div>
                 </div>
                 
@@ -71,11 +71,11 @@
         </div>
         <div id="settingsTabMinecraft" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText"><%- lang('settings.minecraftTabHeaderText') %></span>
-                <span class="settingsTabHeaderDesc"><%- lang('settings.minecraftTabHeaderDesc') %></span>
+                <span class="settingsTabHeaderText">마인크래프트 설정</span>
+                <span class="settingsTabHeaderDesc">게임시작과 관련된 설정</span>
             </div>
             <div id="settingsGameResolutionContainer">
-                <span class="settingsFieldTitle"><%- lang('settings.gameResolutionTitle') %></span>
+                <span class="settingsFieldTitle">게임 해상도</span>
                 <div id="settingsGameResolutionContent">
                     <input type="number" id="settingsGameWidth" min="0" cValue="GameWidth">
                     <div id="settingsGameResolutionCross">&#10006;</div>
@@ -84,7 +84,7 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle"><%- lang('settings.launchFullscreenTitle') %></span>
+                    <span class="settingsFieldTitle">전체 화면 시작</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -95,7 +95,7 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle"><%- lang('settings.autoConnectTitle') %></span>
+                    <span class="settingsFieldTitle">시작할 때 서버에 자동으로 연결됩니다.</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -106,8 +106,8 @@
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle"><%- lang('settings.launchDetachedTitle') %></span>
-                    <span class="settingsFieldDesc"><%- lang('settings.launchDetachedDesc') %></span>
+                    <span class="settingsFieldTitle">런처에서 분리된 프로세스(마인크래프트)를 시작합니다.</span>
+                    <span class="settingsFieldDesc">게임이 분리되지 않은 경우 런처를 닫으면 게임도 종료됩니다.</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -119,8 +119,8 @@
         </div>
         <div id="settingsTabMods" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText"><%- lang('settings.tabModsHeaderText') %></span>
-                <span class="settingsTabHeaderDesc"><%- lang('settings.tabModsHeaderDesc') %></span>
+                <span class="settingsTabHeaderText">모드 설정</span>
+                <span class="settingsTabHeaderDesc">모드를 활성화하거나 비활성화합니다.</span>
             </div>
             <div class="settingsSelServContainer">
                 <div class="settingsSelServContent">
@@ -128,37 +128,37 @@
                 </div>
                 <div class="settingsSwitchServerContainer">
                     <div class="settingsSwitchServerContent">
-                        <button class="settingsSwitchServerButton"><%- lang('settings.switchServerButton') %></button>
+                        <button class="settingsSwitchServerButton">서버 전환</button>
                     </div>
                 </div>
             </div>
             <div id="settingsModsContainer">
                 <div id="settingsReqModsContainer">
-                    <div class="settingsModsHeader"><%- lang('settings.requiredMods') %></div>
+                    <div class="settingsModsHeader">필수 모드</div>
                     <div id="settingsReqModsContent">
 
                     </div>
                 </div>
                 <div id="settingsOptModsContainer">
-                    <div class="settingsModsHeader"><%- lang('settings.optionalMods') %></div>
+                    <div class="settingsModsHeader">선택적 모드</div>
                     <div id="settingsOptModsContent">
                         
                     </div>
                 </div>
                 <div id="settingsDropinModsContainer">
-                    <div class="settingsModsHeader"><%- lang('settings.dropinMods') %></div>
-                    <button id="settingsDropinFileSystemButton"><%- lang('settings.addMods') %> <span id="settingsDropinRefreshNote"><%- lang('settings.dropinRefreshNote') %></span></button>
+                    <div class="settingsModsHeader">모드 추가</div>
+                    <button id="settingsDropinFileSystemButton">+모드 추가 <span id="settingsDropinRefreshNote">(새로고침 F5)</span></button>
                     <div id="settingsDropinModsContent">
                         
                     </div>
                 </div>
                 <div id="settingsShadersContainer">
-                    <div class="settingsModsHeader"><%- lang('settings.shaderpacks') %></div>
-                    <div id="settingsShaderpackDesc"><%- lang('settings.shaderpackDesc') %></div>
+                    <div class="settingsModsHeader">셰이더 팩</div>
+                    <div id="settingsShaderpackDesc">셰이더를 활성화하거나 비활성화하십시오. 셰이더는 강력한 설정에서만 원활하게 실행됩니다. 여기에 사용자 지정 팩을 추가할 수 있습니다.</div>
                     <div id="settingsShaderpackWrapper">
                         <button id="settingsShaderpackButton"> + </button>
                         <div class="settingsSelectContainer">
-                            <div class="settingsSelectSelected" id="settingsShadersSelected"><%- lang('settings.selectShaderpack') %></div>
+                            <div class="settingsSelectSelected" id="settingsShadersSelected">셰이더 팩 선택</div>
                             <div class="settingsSelectOptions" id="settingsShadersOptions" hidden>
 
                             </div>
@@ -169,8 +169,8 @@
         </div>
         <div id="settingsTabJava" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText"><%- lang('settings.tabJavaHeaderText') %></span>
-                <span class="settingsTabHeaderDesc"><%- lang('settings.tabJavaHeaderDesc') %></span>
+                <span class="settingsTabHeaderText">자바 설정</span>
+                <span class="settingsTabHeaderDesc">자바 구성(고급)을 관리</span>
             </div>
             <div class="settingsSelServContainer">
                 <div class="settingsSelServContent">
@@ -178,16 +178,16 @@
                 </div>
                 <div class="settingsSwitchServerContainer">
                     <div class="settingsSwitchServerContent">
-                        <button class="settingsSwitchServerButton"><%- lang('settings.switchServerButton') %></button>
+                        <button class="settingsSwitchServerButton">서버 전환</button>
                     </div>
                 </div>
             </div>
             <div id="settingsMemoryContainer">
-                <div id="settingsMemoryTitle"><%- lang('settings.memoryTitle') %></div>
+                <div id="settingsMemoryTitle">메모리</div>
                 <div id="settingsMemoryContent">
                     <div id="settingsMemoryContentLeft">
                         <div class="settingsMemoryContentItem">
-                            <span class="settingsMemoryHeader"><%- lang('settings.maxRAM') %></span>
+                            <span class="settingsMemoryHeader">최대 램</span>
                             <div class="settingsMemoryActionContainer">
                                 <div id="settingsMaxRAMRange" class="rangeSlider" cValue="MaxRAM" serverDependent min="3" max="8" value="3" step="0.5">
                                     <div class="rangeSliderBar"></div>
@@ -197,7 +197,7 @@
                             </div>
                         </div>
                         <div class="settingsMemoryContentItem">
-                            <span class="settingsMemoryHeader"><%- lang('settings.minRAM') %></span>
+                            <span class="settingsMemoryHeader">최소 램</span>
                             <div class="settingsMemoryActionContainer">
                                 <div id="settingsMinRAMRange" class="rangeSlider" cValue="MinRAM" serverDependent min="3" max="8" value="3" step="0.5">
                                     <div class="rangeSliderBar"></div>
@@ -206,16 +206,16 @@
                                 <span id="settingsMinRAMLabel" class="settingsMemoryLabel">3G</span>
                             </div>
                         </div>
-                        <div id="settingsMemoryDesc"><%- lang('settings.memoryDesc') %></div>
+                        <div id="settingsMemoryDesc">권장 최소 램은 3기가바이트입니다. 최소값과 최대값을 동일한 값으로 설정하면 지연을 줄일 수 있습니다.</div>
                     </div>
                     <div id="settingsMemoryContentRight">
                         <div id="settingsMemoryStatus">
                             <div class="settingsMemoryStatusContainer">
-                                <span class="settingsMemoryStatusTitle"><%- lang('settings.memoryTotalTitle') %></span>
+                                <span class="settingsMemoryStatusTitle">총량</span>
                                 <span id="settingsMemoryTotal" class="settingsMemoryStatusValue">16G</span>
                             </div>
                             <div class="settingsMemoryStatusContainer">
-                                <span class="settingsMemoryStatusTitle"><%- lang('settings.memoryAvailableTitle') %></span>
+                                <span class="settingsMemoryStatusTitle">이용 가능</span>
                                 <span id="settingsMemoryAvail" class="settingsMemoryStatusValue">7.3G</span>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                 </div>
             </div>
             <div class="settingsFileSelContainer">
-                <div class="settingsFileSelTitle"><%- lang('settings.javaExecutableTitle') %></div>
+                <div class="settingsFileSelTitle">자바 실행 파일</div>
                 <div class="settingsFileSelContent">
                     <div id="settingsJavaExecDetails"><!-- Invalid Selection --></div>
                     <div class="settingsFileSelActions">
@@ -242,13 +242,13 @@
                             </svg>
                         </div>
                         <input class="settingsFileSelVal" id="settingsJavaExecVal" type="text" value="null" cValue="JavaExecutable" serverDependent disabled>
-                        <button class="settingsFileSelButton" id="settingsJavaExecSel" dialogTitle="<%- lang('settings.javaExecSelDialogTitle') %>" dialogDirectory="false"><%- lang('settings.javaExecSelButtonText') %></button>
+                        <button class="settingsFileSelButton" id="settingsJavaExecSel" dialogTitle="<%- lang('settings.javaExecSelDialogTitle') %>" dialogDirectory="false">파일 선택</button>
                     </div>
                 </div>
-                <div class="settingsFileSelDesc"><%- lang('settings.javaExecDesc') %> <strong id="settingsJavaReqDesc"><!-- Requires Java 8 x64. --></strong><br><%- lang('settings.javaPathDesc', {'pathSuffix': `bin${process.platform === 'win32' ? '\\javaw.exe' : '/java'}`}) %></div>
+                <div class="settingsFileSelDesc">Java 실행 파일은 게임 시작 전에 유효성이 검사됩니다. <strong id="settingsJavaReqDesc"><!-- Requires Java 8 x64. --></strong><br><%- lang('settings.javaPathDesc', {'pathSuffix': `bin${process.platform === 'win32' ? '\\javaw.exe' : '/java'}`}) %></div>
             </div>
             <div id="settingsJVMOptsContainer">
-                <div id="settingsJVMOptsTitle"><%- lang('settings.jvmOptsTitle') %></div>
+                <div id="settingsJVMOptsTitle">추가 JVM 옵션</div>
                 <div id="settingsJVMOptsContent">
                     <div class="settingsFileSelIcon">
                         <svg class="settingsFileSelSVG" x="0px" y="0px" viewBox="0 0 305.001 305.001">
@@ -266,18 +266,18 @@
                     </div>
                     <input id="settingsJVMOptsVal" cValue="JVMOptions" serverDependent type="text">
                 </div>
-                <div id="settingsJVMOptsDesc"><%- lang('settings.jvmOptsDesc') %><br><a href="#" id="settingsJvmOptsLink"><!-- Available Options --></a></div>
+                <div id="settingsJVMOptsDesc">실행 시 JVM에 제공할 옵션 -Xms 및 -Xmx는 포함되지 않아야 합니다.<br><a href="#" id="settingsJvmOptsLink"><!-- Available Options --></a></div>
             </div>
         </div>
         <div id="settingsTabLauncher" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText"><%- lang('settings.launcherTabHeaderText') %></span>
-                <span class="settingsTabHeaderDesc"><%- lang('settings.launcherTabHeaderDesc') %></span>
+                <span class="settingsTabHeaderText">런처 설정</span>
+                <span class="settingsTabHeaderDesc">런처 자체와 관련된 옵션.</span>
             </div>
             <div class="settingsFieldContainer">
                 <div class="settingsFieldLeft">
-                    <span class="settingsFieldTitle"><%- lang('settings.allowPrereleaseTitle') %></span>
-                    <span class="settingsFieldDesc"><%- lang('settings.allowPrereleaseDesc') %></span>
+                    <span class="settingsFieldTitle">릴리스 전 업데이트 허용</span>
+                    <span class="settingsFieldDesc">사전 releases에는 완전히 테스트되거나 정수되지 않았을 수 있는 새로운 기능이 포함됩니다. 이는 사전 릴리스 버전을 사용하는 경우 항상 해당됩니다.</span>
                 </div>
                 <div class="settingsFieldRight">
                     <label class="toggleSwitch">
@@ -288,7 +288,7 @@
             </div>
             <div class="settingsFileSelContainer">
                 <div class="settingsFileSelContent">
-                    <div class="settingsFieldTitle" id="settingsDataDirTitle"><%- lang('settings.dataDirectoryTitle') %></div>
+                    <div class="settingsFieldTitle" id="settingsDataDirTitle">데이터 디렉토리</div>
                     <div class="settingsFileSelActions">
                         <div class="settingsFileSelIcon">
                             <svg class="settingsFileSelSVG">
@@ -300,27 +300,27 @@
                             </svg>
                         </div>
                         <input class="settingsFileSelVal" type="text" value="null" cValue="DataDirectory" disabled>
-                        <button class="settingsFileSelButton" dialogTitle="<%- lang('settings.selectDataDirectory') %>" dialogDirectory="true"><%- lang('settings.chooseFolder') %></button>
+                        <button class="settingsFileSelButton" dialogTitle="<%- lang('settings.selectDataDirectory') %>" dialogDirectory="true">파일 선택</button>
                     </div>
                 </div>
-                <div class="settingsFileSelDesc"><%- lang('settings.dataDirectoryDesc') %></div>
+                <div class="settingsFileSelDesc">모든 게임 파일과 로컬 Java 설치는 데이터 디렉토리에 저장됩니다. 스크린샷들 및 월드 세이브들은 대응하는 서버 구성들을 위해 인스턴스 폴더에 저장된다.</div>
             </div>
         </div>
         <div id="settingsTabAbout" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
                 <span class="settingsTabHeaderText"><%- lang('settings.aboutTabHeaderText') %></span>
-                <span class="settingsTabHeaderDesc"><%- lang('settings.aboutTabHeaderDesc') %></span>
+                <span class="settingsTabHeaderDesc">현재 버전에 대한 정보 및 릴리스 노트를 봅니다.</span>
             </div>
             <div id="settingsAboutCurrentContainer">
                 <div id="settingsAboutCurrentContent">
                     <div id="settingsAboutCurrentHeadline">
                         <img id="settingsAboutLogo" src="./assets/images/SealCircle.png">
-                        <span id="settingsAboutTitle"><%- lang('settings.aboutTitle', { appName: lang('app.title') }) %></span>
+                        <span id="settingsAboutTitle">하루의 놀이터</span>
                     </div>
                     <div id="settingsAboutCurrentVersion">
                         <div id="settingsAboutCurrentVersionCheck">&#10003;</div>
                         <div id="settingsAboutCurrentVersionDetails">
-                            <span id="settingsAboutCurrentVersionTitle"><%- lang('settings.stableRelease') %></span>
+                            <span id="settingsAboutCurrentVersionTitle">릴리스 안정적</span>
                             <div id="settingsAboutCurrentVersionLine">
                                 <span id="settingsAboutCurrentVersionText"><%- lang('settings.versionText') %></span>
                                 <span id="settingsAboutCurrentVersionValue">0.0.1-alpha.18</span>
@@ -329,10 +329,10 @@
                     </div>
                 </div>
                 <div id="settingsAboutButtons">
-                    <a href="<%- lang('settings.sourceGithubLink') %>" id="settingsAboutSourceButton" class="settingsAboutButton"><%- lang('settings.sourceGithub') %></a>
+                    <a href="<%- lang('settings.sourceGithubLink') %>" id="settingsAboutSourceButton" class="settingsAboutButton">출처(github)</a>
                     <!-- The following must be included in third-party usage. -->
                     <!-- <a href="https://github.com/dscalzi/HeliosLauncher" id="settingsAboutSourceButton" class="settingsAboutButton">Original Source</a> -->
-                    <a href="<%- lang('settings.supportLink') %>" id="settingsAboutSupportButton" class="settingsAboutButton"><%- lang('settings.support') %></a>
+                    <a href="<%- lang('settings.supportLink') %>" id="settingsAboutSupportButton" class="settingsAboutButton">도움</a>
                     <a href="#" id="settingsAboutDevToolsButton" class="settingsAboutButton"><%- lang('settings.devToolsConsole') %></a>
                 </div>
             </div>
@@ -353,8 +353,8 @@
         </div>
         <div id="settingsTabUpdate" class="settingsTab" style="display: none;">
             <div class="settingsTabHeader">
-                <span class="settingsTabHeaderText"><%- lang('settings.launcherUpdatesHeaderText') %></span>
-                <span class="settingsTabHeaderDesc"><%- lang('settings.launcherUpdatesHeaderDesc') %></span>
+                <span class="settingsTabHeaderText">런처 업데이트</span>
+                <span class="settingsTabHeaderDesc">런처에 대한 업데이트를 다운로드, 설치 및 검토합니다.</span>
             </div>
             <div id="settingsUpdateStatusContainer">
                 <div id="settingsUpdateStatusContent">
