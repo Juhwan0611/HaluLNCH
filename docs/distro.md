@@ -461,7 +461,7 @@ Ex.
     "MD5": "a43d5a142246801343b6cedef1c102c4",
     "url": "http://localhost:8080/repo/lib/net/fabricmc/fabric-loader/0.15.0/fabric-loader-0.15.0.jar"
     },
-    "subModules": [
+    "subModules": 
     {
         "id": "1.20.1-fabric-0.15.0",
         "name": "Fabric (version.json)",
