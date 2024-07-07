@@ -1024,3 +1024,12 @@ async function loadNews(){
 
     return await promise
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const versionSelection = document.getElementById('version_selection');
+
+    versionSelection.addEventListener('change', function() {
+        const selectedVersion = versionSelection.value;
+        console.log(`Selected version: ${selectedVersion}`);
+    });
+});
